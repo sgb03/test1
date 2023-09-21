@@ -1,4 +1,4 @@
-package learning_2.contstructors;
+package contstructors;
 
 public class Stuedent {
     private String name;

@@ -1,4 +1,4 @@
-package learning_2.contstructors;
+package contstructors;
 
 public class Rectangle {
     int length;

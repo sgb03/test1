@@ -1,4 +1,4 @@
-package learning_2.contstructors;
+package contstructors;
 
 import java.util.Objects;
 

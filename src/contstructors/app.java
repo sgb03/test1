@@ -1,6 +1,4 @@
-package learning_2.contstructors;
-
-import learning_2.Number;
+package contstructors;
 
 public class app {
     public static void main(String[] args) {
@@ -15,11 +13,11 @@ public class app {
        // stuedent.show();
         
        // System.out.println(stuedent.getMaxSubjects());
-        Number n1=new Number();
-        System.out.println(n1);
-       
-        Clock clock=new Clock();
-        clock.setHours(22);
+//        Number n1=new Number();
+//        System.out.println(n1);
+//
+//        Clock clock=new Clock();
+//        clock.setHours(22);
         
         Stuedent stuedent1=new Stuedent();
         Stuedent stuedent2=new Stuedent("uiu");
@@ -45,7 +43,7 @@ public class app {
         Rectangle rectangle2=new Rectangle(5,3);
        // System.out.println(rectangle2.getRectangleCircumference());
        // System.out.println(rectangle2.getRectangleArea());
-        rectangle2.print('t');
+        rectangle2.print();
        
     }
    
