@@ -12,22 +12,20 @@ public class Rectangle {
    
     
     public Rectangle() {
-        length = 10;
-        width = 10;
+        this(10,10);
     }
-    
     
     public int getLength() {
         return length;
     }
     
-    public boolean setLength(int length) {
+    public void setLength(int length) {
         if (length <= 0) {
             System.out.println("length must be greater than 0");
-            return false;
+            return ;
         }
         this.length = length;
-        return true;
+        
     }
     
     public int getWidth() {
@@ -43,32 +41,36 @@ public class Rectangle {
         return true;
     }
     
-    public int getRectangleCircumference(){
-        return width*2+length*2;
+    public int getRectanglePerimeter(){
+        return this.width*2+this.length*2;
     }
     public int getRectangleArea(){
-        return width*length;
+        return this.width*this.length;
     }
     public void print(){
-        for (int column = 0; column < getLength(); column++) {
-            for (int line = 0; line <getWidth(); line++) {
-                System.out.print("x"+"  ");
+        for (int i = 0; i < getLength(); i++) {
+            for (int j = 0; j <getWidth(); j++) {
+               if(i==0||i==length-1||j==0||j==width-1){
+                   System.out.print("x  ");
+               }else System.out.print("   ");
+               
+            }
+            System.out.println();
+            
+        }
+    }
+    
+    
+    public void print(char c){
+        for (int i = 0; i < getLength(); i++) {
+            for (int j = 0; j <getWidth(); j++) {
+                if(i==0||i==length-1||j==0||j==width-1){
+                    System.out.print(c+"  ");
+                }else System.out.print("   ");
                 
             }
             System.out.println();
             
         }
     }
-//    public void print(char c){
-//        for (int column = 0; column <this.getLength(); column++) {
-//            for (int line = 0; line <this.getWidth(); line++) {
-//                if(column==0||column==length-1||line==0||line==6){
-//                    System.out.print(c+"  ");
-//                }
-//
-//            }
-//            System.out.println();
-//
-//        }
-//    }
 }

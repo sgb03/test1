@@ -38,13 +38,14 @@ public class app {
         
         
         Rectangle rectangle1=new Rectangle();
-      //  System.out.println(rectangle1.getRectangleCircumference());
-       // System.out.println(rectangle1.getRectangleArea());
-        Rectangle rectangle2=new Rectangle(5,3);
-       // System.out.println(rectangle2.getRectangleCircumference());
-       // System.out.println(rectangle2.getRectangleArea());
-        rectangle2.print();
-       
+        //System.out.println(rectangle1.getRectangleCircumference());
+       //System.out.println(rectangle1.getRectangleArea());
+        Rectangle rectangle2=new Rectangle(10,17);
+        System.out.println(rectangle2.getRectanglePerimeter());
+        System.out.println(rectangle2.getRectangleArea());
+        rectangle2.print('A');
+        System.out.println();
+       rectangle1.print();
     }
    
 }
